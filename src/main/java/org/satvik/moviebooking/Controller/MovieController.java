@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/movies")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"*"})  // We'll update this after deployment
 public class MovieController {
 
     private final MovieBookingService service;

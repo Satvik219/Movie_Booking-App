@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/bookings")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {"*"})  // We'll update this after deployment
 public class BookingController {
 
     private final MovieBookingService service;
